@@ -1,0 +1,3 @@
+/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles/BacktestEngine.dir
+/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles/edit_cache.dir
+/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles/rebuild_cache.dir
