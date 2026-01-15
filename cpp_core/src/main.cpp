@@ -4,7 +4,7 @@
 int main(int argc, char* argv[]) {
     BacktestEngine engine(100000.0); // $100k starting cash
     // Binary runs from cpp_core/build — adjust relative path to repository root
-    engine.loadHistoricalData("../../python_analysis/data/AAPL_av.csv");
+    engine.loadHistoricalData("../../python_analysis/data/MSFT_av.csv");
     engine.runStrategy();
     // Default output: write to the repository's python_analysis folder when run from build/
     std::string output = "../../python_analysis/results.csv";

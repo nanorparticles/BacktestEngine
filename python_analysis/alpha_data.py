@@ -1,8 +1,9 @@
 from alpha_vantage.timeseries import TimeSeries
 import pandas as pd
 import time
+import os 
 
-API_KEY = "UBS4NCHQDW9URL7I"
+API_KEY = os.environ.get("ALPHAVANTAGE_KEY")
 
 symbols = ["AAPL", "MSFT", "GOOG"]
 ts = TimeSeries(key=API_KEY, output_format='pandas')
