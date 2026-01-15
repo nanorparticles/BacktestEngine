@@ -85,12 +85,12 @@ clean: CMakeFiles/BacktestEngine.dir/clean
 CMakeFiles/BacktestEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=1,2,3 "Built target BacktestEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target BacktestEngine"
 .PHONY : CMakeFiles/BacktestEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BacktestEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BacktestEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles 0
 .PHONY : CMakeFiles/BacktestEngine.dir/rule
@@ -102,7 +102,7 @@ BacktestEngine: CMakeFiles/BacktestEngine.dir/rule
 # codegen rule for target.
 CMakeFiles/BacktestEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target BacktestEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target BacktestEngine"
 .PHONY : CMakeFiles/BacktestEngine.dir/codegen
 
 # clean rule for target.

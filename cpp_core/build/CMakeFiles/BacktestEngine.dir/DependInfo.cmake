@@ -8,7 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/skylaravery/BacktestEngine/cpp_core/src/engine.cpp" "CMakeFiles/BacktestEngine.dir/src/engine.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/engine.cpp.o.d"
+  "/Users/skylaravery/BacktestEngine/cpp_core/src/Asset.cpp" "CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o.d"
+  "/Users/skylaravery/BacktestEngine/cpp_core/src/BacktestEngine.cpp" "CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o.d"
+  "/Users/skylaravery/BacktestEngine/cpp_core/src/Metrics.cpp" "CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o.d"
+  "/Users/skylaravery/BacktestEngine/cpp_core/src/Portfolio.cpp" "CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o.d"
+  "/Users/skylaravery/BacktestEngine/cpp_core/src/RiskManager.cpp" "CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o.d"
+  "/Users/skylaravery/BacktestEngine/cpp_core/src/Strategy.cpp" "CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o.d"
   "/Users/skylaravery/BacktestEngine/cpp_core/src/main.cpp" "CMakeFiles/BacktestEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/BacktestEngine.dir/src/main.cpp.o.d"
   )
 

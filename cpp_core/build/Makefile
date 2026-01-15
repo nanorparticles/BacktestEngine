@@ -129,29 +129,149 @@ BacktestEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/build
 .PHONY : BacktestEngine/fast
 
-src/engine.o: src/engine.cpp.o
-.PHONY : src/engine.o
+src/Asset.o: src/Asset.cpp.o
+.PHONY : src/Asset.o
 
 # target to build an object file
-src/engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/engine.cpp.o
-.PHONY : src/engine.cpp.o
+src/Asset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o
+.PHONY : src/Asset.cpp.o
 
-src/engine.i: src/engine.cpp.i
-.PHONY : src/engine.i
+src/Asset.i: src/Asset.cpp.i
+.PHONY : src/Asset.i
 
 # target to preprocess a source file
-src/engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/engine.cpp.i
-.PHONY : src/engine.cpp.i
+src/Asset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Asset.cpp.i
+.PHONY : src/Asset.cpp.i
 
-src/engine.s: src/engine.cpp.s
-.PHONY : src/engine.s
+src/Asset.s: src/Asset.cpp.s
+.PHONY : src/Asset.s
 
 # target to generate assembly for a file
-src/engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/engine.cpp.s
-.PHONY : src/engine.cpp.s
+src/Asset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Asset.cpp.s
+.PHONY : src/Asset.cpp.s
+
+src/BacktestEngine.o: src/BacktestEngine.cpp.o
+.PHONY : src/BacktestEngine.o
+
+# target to build an object file
+src/BacktestEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o
+.PHONY : src/BacktestEngine.cpp.o
+
+src/BacktestEngine.i: src/BacktestEngine.cpp.i
+.PHONY : src/BacktestEngine.i
+
+# target to preprocess a source file
+src/BacktestEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.i
+.PHONY : src/BacktestEngine.cpp.i
+
+src/BacktestEngine.s: src/BacktestEngine.cpp.s
+.PHONY : src/BacktestEngine.s
+
+# target to generate assembly for a file
+src/BacktestEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.s
+.PHONY : src/BacktestEngine.cpp.s
+
+src/Metrics.o: src/Metrics.cpp.o
+.PHONY : src/Metrics.o
+
+# target to build an object file
+src/Metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o
+.PHONY : src/Metrics.cpp.o
+
+src/Metrics.i: src/Metrics.cpp.i
+.PHONY : src/Metrics.i
+
+# target to preprocess a source file
+src/Metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.i
+.PHONY : src/Metrics.cpp.i
+
+src/Metrics.s: src/Metrics.cpp.s
+.PHONY : src/Metrics.s
+
+# target to generate assembly for a file
+src/Metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.s
+.PHONY : src/Metrics.cpp.s
+
+src/Portfolio.o: src/Portfolio.cpp.o
+.PHONY : src/Portfolio.o
+
+# target to build an object file
+src/Portfolio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o
+.PHONY : src/Portfolio.cpp.o
+
+src/Portfolio.i: src/Portfolio.cpp.i
+.PHONY : src/Portfolio.i
+
+# target to preprocess a source file
+src/Portfolio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.i
+.PHONY : src/Portfolio.cpp.i
+
+src/Portfolio.s: src/Portfolio.cpp.s
+.PHONY : src/Portfolio.s
+
+# target to generate assembly for a file
+src/Portfolio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.s
+.PHONY : src/Portfolio.cpp.s
+
+src/RiskManager.o: src/RiskManager.cpp.o
+.PHONY : src/RiskManager.o
+
+# target to build an object file
+src/RiskManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o
+.PHONY : src/RiskManager.cpp.o
+
+src/RiskManager.i: src/RiskManager.cpp.i
+.PHONY : src/RiskManager.i
+
+# target to preprocess a source file
+src/RiskManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.i
+.PHONY : src/RiskManager.cpp.i
+
+src/RiskManager.s: src/RiskManager.cpp.s
+.PHONY : src/RiskManager.s
+
+# target to generate assembly for a file
+src/RiskManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.s
+.PHONY : src/RiskManager.cpp.s
+
+src/Strategy.o: src/Strategy.cpp.o
+.PHONY : src/Strategy.o
+
+# target to build an object file
+src/Strategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o
+.PHONY : src/Strategy.cpp.o
+
+src/Strategy.i: src/Strategy.cpp.i
+.PHONY : src/Strategy.i
+
+# target to preprocess a source file
+src/Strategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.i
+.PHONY : src/Strategy.cpp.i
+
+src/Strategy.s: src/Strategy.cpp.s
+.PHONY : src/Strategy.s
+
+# target to generate assembly for a file
+src/Strategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.s
+.PHONY : src/Strategy.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -186,9 +306,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BacktestEngine"
-	@echo "... src/engine.o"
-	@echo "... src/engine.i"
-	@echo "... src/engine.s"
+	@echo "... src/Asset.o"
+	@echo "... src/Asset.i"
+	@echo "... src/Asset.s"
+	@echo "... src/BacktestEngine.o"
+	@echo "... src/BacktestEngine.i"
+	@echo "... src/BacktestEngine.s"
+	@echo "... src/Metrics.o"
+	@echo "... src/Metrics.i"
+	@echo "... src/Metrics.s"
+	@echo "... src/Portfolio.o"
+	@echo "... src/Portfolio.i"
+	@echo "... src/Portfolio.s"
+	@echo "... src/RiskManager.o"
+	@echo "... src/RiskManager.i"
+	@echo "... src/RiskManager.s"
+	@echo "... src/Strategy.o"
+	@echo "... src/Strategy.i"
+	@echo "... src/Strategy.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

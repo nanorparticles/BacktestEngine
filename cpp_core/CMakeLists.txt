@@ -4,4 +4,14 @@ project(BacktestEngine)
 set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 
-add_executable(BacktestEngine src/main.cpp src/engine.cpp)
+set(SOURCES
+    src/main.cpp
+    src/BacktestEngine.cpp
+    src/Asset.cpp
+    src/Portfolio.cpp
+    src/Strategy.cpp
+    src/RiskManager.cpp
+    src/Metrics.cpp
+)
+
+add_executable(BacktestEngine ${SOURCES})
