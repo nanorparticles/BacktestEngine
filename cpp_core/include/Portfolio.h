@@ -8,6 +8,7 @@ class Portfolio {
     double cash_;
 public:
     Portfolio(double initial_cash);
+    
     double cash() const { return cash_; }
     void buy(const std::string& symbol, int quantity, double price);
     void sell(const std::string& symbol, int quantity, double price);
