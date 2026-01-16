@@ -1,11 +1,18 @@
 #pragma once
-#include "EventQueue.h"
+#include "Event.h"
+#include "Strategy.h"
 #include "Portfolio.h"
 #include "Metrics.h"
-#include "Strategy.h"
 #include "RiskManager.h"
+
+#include <vector>
+#include <memory>
 
 class BacktestEngine {
 public:
-    void run(EventQueue& eq, Strategy& strat, Portfolio& port, Metrics& metrics, RiskManager* rm=nullptr);
+    void run(std::vector<std::shared_ptr<Event>>& events,
+             Strategy& strat,
+             Portfolio& portfolio,
+             Metrics& metrics,
+             RiskManager* risk = nullptr);
 };

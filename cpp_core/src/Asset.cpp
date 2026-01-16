@@ -15,7 +15,8 @@ std::vector<std::shared_ptr<MarketEvent>> Asset::to_market_events() const {
         auto e = std::make_shared<MarketEvent>();
         e->type = EventType::Market;
         // convert stored timestamp (e.g. time_t or numeric epoch) to a time_point for MarketEvent::ts
-        e->ts = std::chrono::system_clock::from_time_t(static_cast<std::time_t>(timestamps[i]));
+// Instead of from_time_t
+        e->ts = std::chrono::system_clock::time_point(std::chrono::milliseconds(timestamps[i]));
         e->symbol = symbol;
         e->open = prices[i];
         e->high = prices[i];

@@ -1,18 +1,16 @@
 #include "BuyAndHoldStrategy.h"
-#include <memory>
+#include "Portfolio.h"
+#include <iostream>
 
-std::vector<std::shared_ptr<OrderEvent>> BuyAndHoldStrategy::on_market_event(const MarketEvent& e) {
-    std::vector<std::shared_ptr<OrderEvent>> orders;
-    static bool bought = false;
-    if (!bought) {
-        auto order = std::make_shared<OrderEvent>();
-        order->type = EventType::Order;
-        order->ts = e.ts;
-        order->symbol = e.symbol;
-        order->quantity = 1;
-        order->limit_price = 0.0;
-        orders.push_back(order);
-        bought = true;
+void BuyAndHoldStrategy::on_market_event(const MarketEvent& e, Portfolio& portfolio) {
+    if (portfolio.position(e.symbol) == 0) {
+        // Buy as much as possible, but spread across all symbols
+        double total_cash = portfolio.cash();
+        size_t remaining_symbols = 3; // or dynamically count symbols with position 0
+        int qty = static_cast<int>(total_cash / remaining_symbols / e.close);
+        if (qty > 0) {
+            portfolio.buy(e.symbol, qty, e.close);
+            std::cout << "BuyAndHold: Bought " << qty << " of " << e.symbol << " at $" << e.close << "\n";
+        }
     }
-    return orders;
 }

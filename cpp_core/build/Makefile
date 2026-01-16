@@ -177,6 +177,102 @@ src/BacktestEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.s
 .PHONY : src/BacktestEngine.cpp.s
 
+src/BuyAndHoldStrategy.o: src/BuyAndHoldStrategy.cpp.o
+.PHONY : src/BuyAndHoldStrategy.o
+
+# target to build an object file
+src/BuyAndHoldStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o
+.PHONY : src/BuyAndHoldStrategy.cpp.o
+
+src/BuyAndHoldStrategy.i: src/BuyAndHoldStrategy.cpp.i
+.PHONY : src/BuyAndHoldStrategy.i
+
+# target to preprocess a source file
+src/BuyAndHoldStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.i
+.PHONY : src/BuyAndHoldStrategy.cpp.i
+
+src/BuyAndHoldStrategy.s: src/BuyAndHoldStrategy.cpp.s
+.PHONY : src/BuyAndHoldStrategy.s
+
+# target to generate assembly for a file
+src/BuyAndHoldStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.s
+.PHONY : src/BuyAndHoldStrategy.cpp.s
+
+src/CSVLoader.o: src/CSVLoader.cpp.o
+.PHONY : src/CSVLoader.o
+
+# target to build an object file
+src/CSVLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o
+.PHONY : src/CSVLoader.cpp.o
+
+src/CSVLoader.i: src/CSVLoader.cpp.i
+.PHONY : src/CSVLoader.i
+
+# target to preprocess a source file
+src/CSVLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.i
+.PHONY : src/CSVLoader.cpp.i
+
+src/CSVLoader.s: src/CSVLoader.cpp.s
+.PHONY : src/CSVLoader.s
+
+# target to generate assembly for a file
+src/CSVLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.s
+.PHONY : src/CSVLoader.cpp.s
+
+src/Event.o: src/Event.cpp.o
+.PHONY : src/Event.o
+
+# target to build an object file
+src/Event.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Event.cpp.o
+.PHONY : src/Event.cpp.o
+
+src/Event.i: src/Event.cpp.i
+.PHONY : src/Event.i
+
+# target to preprocess a source file
+src/Event.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Event.cpp.i
+.PHONY : src/Event.cpp.i
+
+src/Event.s: src/Event.cpp.s
+.PHONY : src/Event.s
+
+# target to generate assembly for a file
+src/Event.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/Event.cpp.s
+.PHONY : src/Event.cpp.s
+
+src/EventQueue.o: src/EventQueue.cpp.o
+.PHONY : src/EventQueue.o
+
+# target to build an object file
+src/EventQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o
+.PHONY : src/EventQueue.cpp.o
+
+src/EventQueue.i: src/EventQueue.cpp.i
+.PHONY : src/EventQueue.i
+
+# target to preprocess a source file
+src/EventQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.i
+.PHONY : src/EventQueue.cpp.i
+
+src/EventQueue.s: src/EventQueue.cpp.s
+.PHONY : src/EventQueue.s
+
+# target to generate assembly for a file
+src/EventQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BacktestEngine.dir/build.make CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.s
+.PHONY : src/EventQueue.cpp.s
+
 src/Metrics.o: src/Metrics.cpp.o
 .PHONY : src/Metrics.o
 
@@ -312,6 +408,18 @@ help:
 	@echo "... src/BacktestEngine.o"
 	@echo "... src/BacktestEngine.i"
 	@echo "... src/BacktestEngine.s"
+	@echo "... src/BuyAndHoldStrategy.o"
+	@echo "... src/BuyAndHoldStrategy.i"
+	@echo "... src/BuyAndHoldStrategy.s"
+	@echo "... src/CSVLoader.o"
+	@echo "... src/CSVLoader.i"
+	@echo "... src/CSVLoader.s"
+	@echo "... src/Event.o"
+	@echo "... src/Event.i"
+	@echo "... src/Event.s"
+	@echo "... src/EventQueue.o"
+	@echo "... src/EventQueue.i"
+	@echo "... src/EventQueue.s"
 	@echo "... src/Metrics.o"
 	@echo "... src/Metrics.i"
 	@echo "... src/Metrics.s"

@@ -100,10 +100,66 @@ CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skylaravery/BacktestEngine/cpp_core/src/BacktestEngine.cpp -o CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.s
 
+CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
+CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/BuyAndHoldStrategy.cpp
+CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/BuyAndHoldStrategy.cpp
+
+CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skylaravery/BacktestEngine/cpp_core/src/BuyAndHoldStrategy.cpp > CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.i
+
+CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skylaravery/BacktestEngine/cpp_core/src/BuyAndHoldStrategy.cpp -o CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.s
+
+CMakeFiles/BacktestEngine.dir/src/Event.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
+CMakeFiles/BacktestEngine.dir/src/Event.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/Event.cpp
+CMakeFiles/BacktestEngine.dir/src/Event.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Event.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/Event.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/Event.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/Event.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/Event.cpp
+
+CMakeFiles/BacktestEngine.dir/src/Event.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BacktestEngine.dir/src/Event.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skylaravery/BacktestEngine/cpp_core/src/Event.cpp > CMakeFiles/BacktestEngine.dir/src/Event.cpp.i
+
+CMakeFiles/BacktestEngine.dir/src/Event.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BacktestEngine.dir/src/Event.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skylaravery/BacktestEngine/cpp_core/src/Event.cpp -o CMakeFiles/BacktestEngine.dir/src/Event.cpp.s
+
+CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
+CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/EventQueue.cpp
+CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/EventQueue.cpp
+
+CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skylaravery/BacktestEngine/cpp_core/src/EventQueue.cpp > CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.i
+
+CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skylaravery/BacktestEngine/cpp_core/src/EventQueue.cpp -o CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.s
+
+CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
+CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/CSVLoader.cpp
+CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/CSVLoader.cpp
+
+CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/skylaravery/BacktestEngine/cpp_core/src/CSVLoader.cpp > CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.i
+
+CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/skylaravery/BacktestEngine/cpp_core/src/CSVLoader.cpp -o CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.s
+
 CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
 CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/Asset.cpp
 CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/Asset.cpp
 
 CMakeFiles/BacktestEngine.dir/src/Asset.cpp.i: cmake_force
@@ -117,7 +173,7 @@ CMakeFiles/BacktestEngine.dir/src/Asset.cpp.s: cmake_force
 CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
 CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/Portfolio.cpp
 CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/Portfolio.cpp
 
 CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.i: cmake_force
@@ -131,7 +187,7 @@ CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.s: cmake_force
 CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
 CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/Strategy.cpp
 CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/Strategy.cpp
 
 CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.i: cmake_force
@@ -145,7 +201,7 @@ CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.s: cmake_force
 CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
 CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/RiskManager.cpp
 CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/RiskManager.cpp
 
 CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.i: cmake_force
@@ -159,7 +215,7 @@ CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.s: cmake_force
 CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o: CMakeFiles/BacktestEngine.dir/flags.make
 CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o: /Users/skylaravery/BacktestEngine/cpp_core/src/Metrics.cpp
 CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o: CMakeFiles/BacktestEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o -MF CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o.d -o CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o -c /Users/skylaravery/BacktestEngine/cpp_core/src/Metrics.cpp
 
 CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.i: cmake_force
@@ -174,6 +230,10 @@ CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.s: cmake_force
 BacktestEngine_OBJECTS = \
 "CMakeFiles/BacktestEngine.dir/src/main.cpp.o" \
 "CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o" \
+"CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o" \
+"CMakeFiles/BacktestEngine.dir/src/Event.cpp.o" \
+"CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o" \
+"CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o" \
 "CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o" \
 "CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o" \
 "CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o" \
@@ -185,6 +245,10 @@ BacktestEngine_EXTERNAL_OBJECTS =
 
 BacktestEngine: CMakeFiles/BacktestEngine.dir/src/main.cpp.o
 BacktestEngine: CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o
+BacktestEngine: CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o
+BacktestEngine: CMakeFiles/BacktestEngine.dir/src/Event.cpp.o
+BacktestEngine: CMakeFiles/BacktestEngine.dir/src/EventQueue.cpp.o
+BacktestEngine: CMakeFiles/BacktestEngine.dir/src/CSVLoader.cpp.o
 BacktestEngine: CMakeFiles/BacktestEngine.dir/src/Asset.cpp.o
 BacktestEngine: CMakeFiles/BacktestEngine.dir/src/Portfolio.cpp.o
 BacktestEngine: CMakeFiles/BacktestEngine.dir/src/Strategy.cpp.o
@@ -192,7 +256,7 @@ BacktestEngine: CMakeFiles/BacktestEngine.dir/src/RiskManager.cpp.o
 BacktestEngine: CMakeFiles/BacktestEngine.dir/src/Metrics.cpp.o
 BacktestEngine: CMakeFiles/BacktestEngine.dir/build.make
 BacktestEngine: CMakeFiles/BacktestEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable BacktestEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/skylaravery/BacktestEngine/cpp_core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable BacktestEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BacktestEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

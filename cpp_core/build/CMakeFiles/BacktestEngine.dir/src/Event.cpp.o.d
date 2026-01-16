@@ -1,7 +1,5 @@
-CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o: \
-  /Users/skylaravery/BacktestEngine/cpp_core/src/BacktestEngine.cpp \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/BacktestEngine.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/Event.h \
+CMakeFiles/BacktestEngine.dir/src/Event.cpp.o: \
+  /Users/skylaravery/BacktestEngine/cpp_core/src/Event.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -782,23 +780,4 @@ CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/Strategy.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/Portfolio.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/Metrics.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/RiskManager.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_char_like_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h

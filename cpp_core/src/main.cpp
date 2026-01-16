@@ -1,32 +1,36 @@
-#include "Asset.h"
-#include "EventQueue.h"
 #include "BacktestEngine.h"
-#include "Portfolio.h"
-#include "Metrics.h"
-#include "RiskManager.h"
 #include "BuyAndHoldStrategy.h"
+#include "CSVLoader.h"   // implement load_asset_csv
+#include "Metrics.h"
+#include "Portfolio.h"
 
+#include <memory>
+#include <vector>
+#include <string>
 #include <iostream>
 
 int main() {
-    Asset aapl;
-    aapl.symbol = "AAPL";
-    aapl.prices = {150, 152, 151, 153, 155};
-    aapl.timestamps = {1,2,3,4,5};
+    std::vector<std::string> symbols = {"AAPL", "GOOG", "MSFT"};
+    std::vector<std::string> paths = {
+        "../data/AAPL_av.csv",
+        "../data/GOOG_av.csv",
+        "../data/MSFT_av.csv"
+    };
 
-    EventQueue eq;
-    for (auto e : aapl.to_market_events()) eq.push(e);
+    std::vector<std::shared_ptr<Event>> events;
+    std::vector<Asset> assets;
+    for(size_t i = 0; i < symbols.size(); ++i) {
+        assets.push_back(load_asset_csv(symbols[i], paths[i]));
+        auto market_events = assets.back().to_market_events();
+        for(auto& e : market_events) events.push_back(e);
+    }
 
-    Portfolio port(10000.0);
-    Metrics metrics;
-    RiskManager rm;
+    Portfolio portfolio(100000.0);
     BuyAndHoldStrategy strat;
+    Metrics metrics;
     BacktestEngine engine;
 
-    engine.run(eq, strat, port, metrics, &rm);
+    engine.run(events, strat, portfolio, metrics);
 
-    std::cout << "Equity: " << port.equity() << "\n";
-    std::cout << "Cumulative Return: " << metrics.cumulative_return() << "\n";
-    std::cout << "Max Drawdown: " << metrics.max_drawdown() << "\n";
-    std::cout << "Sharpe Ratio: " << metrics.sharpe() << "\n";
+    return 0;
 }

@@ -9,6 +9,8 @@ set(SOURCES
     src/BacktestEngine.cpp
     src/BuyAndHoldStrategy.cpp
     src/Event.cpp
+    src/EventQueue.cpp
+    src/CSVLoader.cpp
     src/Asset.cpp
     src/Portfolio.cpp
     src/Strategy.cpp

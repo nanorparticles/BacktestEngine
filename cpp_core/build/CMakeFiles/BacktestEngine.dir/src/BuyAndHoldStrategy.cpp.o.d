@@ -1,6 +1,7 @@
-CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o: \
-  /Users/skylaravery/BacktestEngine/cpp_core/src/BacktestEngine.cpp \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/BacktestEngine.h \
+CMakeFiles/BacktestEngine.dir/src/BuyAndHoldStrategy.cpp.o: \
+  /Users/skylaravery/BacktestEngine/cpp_core/src/BuyAndHoldStrategy.cpp \
+  /Users/skylaravery/BacktestEngine/cpp_core/include/BuyAndHoldStrategy.h \
+  /Users/skylaravery/BacktestEngine/cpp_core/include/Strategy.h \
   /Users/skylaravery/BacktestEngine/cpp_core/include/Event.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
@@ -783,10 +784,7 @@ CMakeFiles/BacktestEngine.dir/src/BacktestEngine.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/Strategy.h \
   /Users/skylaravery/BacktestEngine/cpp_core/include/Portfolio.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/Metrics.h \
-  /Users/skylaravery/BacktestEngine/cpp_core/include/RiskManager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h \

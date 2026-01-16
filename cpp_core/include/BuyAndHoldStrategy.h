@@ -1,7 +1,12 @@
 #pragma once
 #include "Strategy.h"
+#include <unordered_map>
+#include <string>
 
 class BuyAndHoldStrategy : public Strategy {
+    std::unordered_map<std::string, bool> has_bought_;
 public:
-    std::vector<std::shared_ptr<OrderEvent>> on_market_event(const MarketEvent& e) override;
+    BuyAndHoldStrategy() = default;
+
+    void on_market_event(const MarketEvent& e, Portfolio& portfolio) override;
 };
