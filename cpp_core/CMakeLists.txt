@@ -7,6 +7,8 @@ include_directories(include)
 set(SOURCES
     src/main.cpp
     src/BacktestEngine.cpp
+    src/BuyAndHoldStrategy.cpp
+    src/Event.cpp
     src/Asset.cpp
     src/Portfolio.cpp
     src/Strategy.cpp

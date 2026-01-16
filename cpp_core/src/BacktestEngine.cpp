@@ -1,52 +1,30 @@
 #include "BacktestEngine.h"
-#include <fstream>
-#include <iostream>
+#include <memory>
 
-void BacktestEngine::run(
-    const std::vector<Asset>& assets,
-    Strategy& strategy,
-    const std::string& output_csv
-) {
-    if (assets.empty()) {
-        std::cerr << "No assets provided to BacktestEngine.\n";
-        return;
-    }
+void BacktestEngine::run(EventQueue& eq, Strategy& strat, Portfolio& port, Metrics& metrics, RiskManager* rm) {
+    while (!eq.empty()) {
+        auto event = eq.pop();
+        if (!event) continue;
 
-    size_t N = assets.size();
-    size_t T = assets[0].prices.size();
+        if (event->type == EventType::Market) {
+            auto market = std::static_pointer_cast<MarketEvent>(event);
 
-    Portfolio portfolio(N);
-    RiskManager risk;
-    risk.max_leverage = 1.0;
-    risk.target_volatility = 0.02;
+            auto orders = strat.on_market_event(*market);
+            if (rm) rm->enforce(orders, port);
 
-    std::ofstream out(output_csv);
-    if (!out.is_open()) {
-        std::cerr << "Failed to open " << output_csv << " for writing.\n";
-        return;
-    }
+            for (auto& o : orders) {
+                FillEvent fill;
+                fill.type = EventType::Fill;
+                fill.ts = o->ts;
+                fill.symbol = o->symbol;
+                fill.quantity = o->quantity;
+                fill.fill_price = market->close;
+                fill.fee = 0.0;
+                port.apply_fill(fill);
+            }
 
-    out << "day,portfolio_return\n";
-
-    // Main loop
-    for (size_t t = strategy.long_window; t < T; ++t) {
-        // 1. Generate signals
-        for (size_t i = 0; i < N; ++i) {
-            portfolio.weights[i] = strategy.generate_signal(assets[i], t);
+            port.mark_to_market(*market);
+            metrics.record(port.equity());
         }
-
-        // 2. Apply volatility-adjusted risk management
-        risk.enforce(const_cast<std::vector<Asset>&>(assets), portfolio);
-
-        // 3. Compute daily PnL
-        double daily_pnl = 0.0;
-        for (size_t i = 0; i < N; ++i) {
-            daily_pnl += portfolio.weights[i] * assets[i].returns[t];
-        }
-
-        out << t << "," << daily_pnl << "\n";
     }
-
-    out.close();
-    std::cout << "Backtest complete. Results written to " << output_csv << "\n";
 }

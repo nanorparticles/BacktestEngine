@@ -1,16 +1,11 @@
 #pragma once
-#include <vector>
-#include "Asset.h"
-#include "Strategy.h"
+#include "EventQueue.h"
 #include "Portfolio.h"
+#include "Metrics.h"
+#include "Strategy.h"
 #include "RiskManager.h"
-#include <string>
 
 class BacktestEngine {
 public:
-    void run(
-        const std::vector<Asset>& assets,
-        Strategy& strategy,
-        const std::string& output_csv = "results.csv"
-    );
+    void run(EventQueue& eq, Strategy& strat, Portfolio& port, Metrics& metrics, RiskManager* rm=nullptr);
 };

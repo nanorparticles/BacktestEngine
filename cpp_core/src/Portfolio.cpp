@@ -1,13 +1,20 @@
 #include "Portfolio.h"
-#include <numeric>
-#include <cmath>
 
-Portfolio::Portfolio(int n_assets)
-    : weights(n_assets, 0.0), cash(1.0) {}
+Portfolio::Portfolio(double initial_cash) : cash_(initial_cash) {}
 
-double Portfolio::total_exposure() const {
-    return std::accumulate(
-        weights.begin(), weights.end(), 0.0,
-        [](double a, double b) { return a + std::abs(b); }
-    );
+void Portfolio::apply_fill(const FillEvent& e) {
+    positions_[e.symbol] += e.quantity;
+    cash_ -= e.quantity * e.fill_price + e.fee;
+}
+
+void Portfolio::mark_to_market(const MarketEvent& e) {
+    // Placeholder
+}
+
+double Portfolio::equity() const {
+    double eq = cash_;
+    for (const auto& [sym, qty] : positions_) {
+        eq += qty * 1.0; // placeholder for current price
+    }
+    return eq;
 }

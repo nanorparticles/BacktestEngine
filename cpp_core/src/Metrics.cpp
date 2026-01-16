@@ -1,71 +1,34 @@
 #include "Metrics.h"
+#include <numeric>
 #include <cmath>
 #include <algorithm>
-#include <numeric>
 
-namespace Metrics {
-
-double mean(const std::vector<double>& x) {
-    if (x.empty()) return 0.0;
-    return std::accumulate(x.begin(), x.end(), 0.0) / x.size();
+void Metrics::record(double equity) {
+    equity_history_.push_back(equity);
 }
 
-double stddev(const std::vector<double>& x) {
-    if (x.size() < 2) return 0.0;
-
-    double m = mean(x);
-    double accum = 0.0;
-
-    for (double v : x) {
-        double diff = v - m;
-        accum += diff * diff;
-    }
-
-    return std::sqrt(accum / (x.size() - 1));  // sample std dev
+double Metrics::cumulative_return() const {
+    if (equity_history_.empty()) return 0.0;
+    return (equity_history_.back() - equity_history_.front()) / equity_history_.front();
 }
 
-double sharpe_ratio(
-    const std::vector<double>& returns,
-    double risk_free_rate,
-    double annualization_factor
-) {
-    if (returns.size() < 2) return 0.0;
-
-    // Excess returns
-    std::vector<double> excess(returns.size());
-    for (size_t i = 0; i < returns.size(); ++i) {
-        excess[i] = returns[i] - risk_free_rate / annualization_factor;
+double Metrics::max_drawdown() const {
+    double max_dd = 0.0, peak = -1e9;
+    for (auto e : equity_history_) {
+        peak = std::max(peak, e);
+        max_dd = std::max(max_dd, (peak - e) / peak);
     }
-
-    double mu = mean(excess);
-    double sigma = stddev(excess);
-
-    if (sigma == 0.0) return 0.0;
-
-    return std::sqrt(annualization_factor) * mu / sigma;
-}
-
-double cumulative_return(const std::vector<double>& returns) {
-    double cumulative = 1.0;
-    for (double r : returns) {
-        cumulative *= (1.0 + r);
-    }
-    return cumulative - 1.0;
-}
-
-double max_drawdown(const std::vector<double>& returns) {
-    double peak = 1.0;
-    double equity = 1.0;
-    double max_dd = 0.0;
-
-    for (double r : returns) {
-        equity *= (1.0 + r);
-        peak = std::max(peak, equity);
-        double drawdown = (peak - equity) / peak;
-        max_dd = std::max(max_dd, drawdown);
-    }
-
     return max_dd;
 }
 
+double Metrics::sharpe() const {
+    if (equity_history_.size() < 2) return 0.0;
+    std::vector<double> returns;
+    for (size_t i = 1; i < equity_history_.size(); ++i)
+        returns.push_back(equity_history_[i] - equity_history_[i-1]);
+    double mean = std::accumulate(returns.begin(), returns.end(), 0.0) / returns.size();
+    double stddev = 0.0;
+    for (auto r : returns) stddev += (r - mean)*(r - mean);
+    stddev = std::sqrt(stddev / (returns.size() - 1));
+    return stddev > 0 ? mean / stddev : 0.0;
 }

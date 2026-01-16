@@ -1,11 +1,15 @@
 #pragma once
-#include <string>
 #include <vector>
+#include <string>
+#include <memory>
+#include "Event.h"
 
-struct Asset {
+class Asset {
+public:
     std::string symbol;
     std::vector<double> prices;
-    std::vector<double> returns;
+    std::vector<long long> timestamps;
 
-    void compute_returns();
+    std::vector<double> compute_returns() const;
+    std::vector<std::shared_ptr<MarketEvent>> to_market_events() const;
 };

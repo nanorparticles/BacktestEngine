@@ -1,13 +1,10 @@
 #pragma once
-#include "Asset.h"
+#include "Event.h"
+#include <vector>
+#include <memory>
 
 class Strategy {
 public:
-    int short_window = 5;  // default, can adjust
-    int long_window  = 20; // default, can adjust
-
-    double generate_signal(const Asset& asset, int t) const;
-
-private:
-    double sma(const std::vector<double>& prices, int t, int window) const;
+    virtual std::vector<std::shared_ptr<OrderEvent>> on_market_event(const MarketEvent& e) = 0;
+    virtual ~Strategy() = default;
 };

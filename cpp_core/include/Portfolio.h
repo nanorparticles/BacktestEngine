@@ -1,12 +1,14 @@
 #pragma once
-#include <vector>
+#include "Event.h"
+#include <unordered_map>
+#include <string>
 
 class Portfolio {
+    std::unordered_map<std::string, int> positions_;
+    double cash_;
 public:
-    std::vector<double> weights;   // per asset
-    double cash;
-
-    Portfolio(int n_assets);
-
-    double total_exposure() const;
+    Portfolio(double initial_cash);
+    void apply_fill(const FillEvent& e);
+    void mark_to_market(const MarketEvent& e);
+    double equity() const;
 };
